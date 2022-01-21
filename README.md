@@ -1,30 +1,19 @@
 
-# Setup Docker Para Projetos Laravel
+# Laravel inicial para novos projetos
 ### Passo a passo
-Clone Repositório
-
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
-```sh
-cp -r setup-docker-laravel/* seu-projeto/
-```
+Clone o Repositório
 
 Crie o Arquivo .env
 ```sh
-cd seu-projeto/
+cd projeto-laravel/
 cp .env.example .env
 ```
 
-Atualizar as variáveis de ambiente do arquivo .env
+Atualizar o nome do banco de dados no arquivo .env
 ```dosini
-APP_NAME=MeuProjeto
-APP_URL=http://localhost:8989
 
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
 DB_DATABASE=nome_que_desejar_db
-DB_USERNAME=root
-DB_PASSWORD=root
+
 ```
 
 Suba os containers do projeto
